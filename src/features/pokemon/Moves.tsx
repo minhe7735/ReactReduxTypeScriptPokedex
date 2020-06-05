@@ -6,7 +6,7 @@ export const Moves = () => {
     const moves = useSelector(selectMoves);
     return (
         <ul className="mt-5 h-104 overflow-y-auto">
-            {moves.map((ele: any) => (
+            {moves.map((ele: { move: { name: string } }) => (
                 <li
                     className="text-white ml-2 grid grid-cols-3 "
                     key={ele.move.name}

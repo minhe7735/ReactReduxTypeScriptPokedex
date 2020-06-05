@@ -6,15 +6,27 @@ export const Stats = () => {
     const stats = useSelector(selectStats);
     return (
         <ul className="mt-5">
-            {stats.map((ele: any) => (
-                <li
-                    className="text-white ml-2 grid grid-cols-2 "
-                    key={ele.stat.name + ele.base_stat}
-                >
-                    <div className="col-span-1">{ele.stat.name}:</div>
-                    <div className="col-span-1">{ele.base_stat}</div>
-                </li>
-            ))}
+            <div className="grid grid-cols-4">
+                <div className="col-span-2"></div>
+                <div className="col-span-1 text-white">IV</div>
+                <div className="col-span-1 text-white">EV</div>
+            </div>
+            {stats.map(
+                (ele: {
+                    base_stat: number;
+                    effort: number;
+                    stat: { name: string };
+                }) => (
+                    <li
+                        className="text-white ml-2 grid grid-cols-4 "
+                        key={ele.stat.name + ele.base_stat}
+                    >
+                        <div className="col-span-2">{ele.stat.name}:</div>
+                        <div className="col-span-1">{ele.base_stat}</div>
+                        <div className="col-span-1">{ele.effort}</div>
+                    </li>
+                )
+            )}
         </ul>
     );
 };

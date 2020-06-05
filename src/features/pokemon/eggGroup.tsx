@@ -6,7 +6,7 @@ export const EggGroup = () => {
     const eggGroup = useSelector(selectEggGroup);
     return (
         <ul className="mt-5">
-            {eggGroup.map((ele: any) => (
+            {eggGroup.map((ele: { name: string }) => (
                 <li className="text-white ml-2 " key={ele.name}>
                     <div className="col-span-1">{ele.name}</div>
                 </li>
