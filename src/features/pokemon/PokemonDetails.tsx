@@ -30,37 +30,37 @@ export function PokemonDetails() {
                 <div className="grid grid-rows-6 col-span-3 sm:col-span-5  ">
                     <div className=" row-span-5 overflow-y-auto ">
                         <div className="grid h-full grid-flow-col gap-1 sm:overflow-y-auto max-w-none">
-                            <div className=" bg-gray-700 w-64">
+                            <div className=" bg-gray-700 w-72">
                                 <h1 className="text-center text-white bg-blue-500">
                                     Name
                                 </h1>
                                 <Names />
                             </div>
-                            <div className=" bg-gray-700 w-64">
+                            <div className=" bg-gray-700 w-72">
                                 <h1 className="text-center text-white bg-blue-500">
                                     Pokedex Number
                                 </h1>
                                 <DexNum />
                             </div>
-                            <div className=" bg-gray-700 w-64 overflow-y-auto  ">
+                            <div className=" bg-gray-700 w-72 overflow-y-auto  ">
                                 <h1 className="text-center text-white bg-blue-500">
                                     Moves
                                 </h1>
                                 <Moves />
                             </div>
-                            <div className=" bg-gray-700 w-64">
+                            <div className=" bg-gray-700 w-72">
                                 <h1 className="text-center text-white bg-blue-500">
                                     Base Stats
                                 </h1>
                                 <Stats />
                             </div>
-                            <div className=" bg-gray-700 w-64">
+                            <div className=" bg-gray-700 w-72">
                                 <h1 className="text-center text-white bg-blue-500">
                                     abilities
                                 </h1>
                                 <Abilities />
                             </div>
-                            <div className=" bg-gray-700 w-64">
+                            <div className=" bg-gray-700 w-72">
                                 <h1 className="text-center text-white bg-blue-500">
                                     egg group
                                 </h1>
