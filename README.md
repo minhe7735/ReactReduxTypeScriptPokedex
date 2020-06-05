@@ -2,6 +2,6 @@
 
 ## Info
 
-build with data from https://pokeapi.co/
-official artwork by Ken Sugimori, sourced from http://serebii.net/
+build with data from https://pokeapi.co/  
+official artwork by Ken Sugimori, sourced from http://serebii.net/  
 sprites sourced from https://pokemondb.net/
